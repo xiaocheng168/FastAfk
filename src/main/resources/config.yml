@@ -1,0 +1,29 @@
+afk:
+  #领地名 子领地用下划线分割
+  qwq_awa:
+    #是否启用
+    enable: true
+    #权限节点 为空则不需要权限
+    permission: ""
+    #单位 （ms）
+    delay: 10000
+    #给的金币
+    money: 10
+    #给的点券
+    points: 0
+    #给的经验
+    exp: 3
+    #进入提示 Title
+    join_title: "§a你已进入挂机池"
+    join_sub_title: ""
+    #奖励发放提示 Title
+    give_award_title: "§e奖励已发放"
+    give_award_sub_title: ""
+    #进入后没有权限提示 Title
+    no_permission_title: "§c没有权限欸"
+    no_permission_sub_title: ""
+    #执行的命令
+    commands:
+      - "player say 玩家"
+      - "console say 后台"
+      - "op say 临时玩家OP"

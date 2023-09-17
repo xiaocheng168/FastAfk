@@ -1,0 +1,13 @@
+name: FastAfk
+main: cc.mcyx.fastafk.Main
+version: ${project.version}
+description: "Fast afk system"
+folia-supported: true
+website: https://game.mcyx.cc/
+author: Zcc(星兮兮)
+depend:
+  - Vault
+  - Residence
+  - PlaceholderAPI
+softdepend:
+  - PlayerPoints
