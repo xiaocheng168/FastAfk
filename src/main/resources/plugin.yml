@@ -1,7 +1,7 @@
 name: FastAfk
 main: cc.mcyx.fastafk.Main
 version: ${project.version}
-description: "Fast afk system"
+description: "简单快速挂机池工具"
 folia-supported: true
 website: https://game.mcyx.cc/
 author: Zcc(星兮兮)
