@@ -1,11 +1,10 @@
 package cc.mcyx.fastafk;
 
+import cc.mcyx.fastafk.api.Metrics;
 import cc.mcyx.fastafk.listener.PlayerListener;
 import net.milkbowl.vault.economy.Economy;
 import org.black_ixx.playerpoints.PlayerPoints;
 import org.black_ixx.playerpoints.PlayerPointsAPI;
-import org.bstats.bukkit.Metrics;
-import org.bstats.charts.SimplePie;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -26,7 +25,7 @@ public class Main extends JavaPlugin {
         fastAfk = this;
         try {
             Metrics metrics = new Metrics(this, 19825);
-            metrics.addCustomChart(new SimplePie("FastAfk", () -> ""));
+            metrics.addCustomChart(new Metrics.SimplePie("FastAfk", () -> "start!"));
         } catch (Exception e) {
             getLogger().warning("插件统计无法使用..不影响正常工作!");
         }
