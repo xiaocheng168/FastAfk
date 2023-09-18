@@ -11,12 +11,25 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
+    /**
+     * Vault 经济体
+     */
     public static Economy economy;
 
+    /**
+     * 插件主体
+     */
     public static Main fastAfk;
+
+    /**
+     * PlayerPoints 经济体
+     */
 
     public static PlayerPointsAPI playerPointsAPI;
 
+    /**
+     * 插件是否已卸载关闭
+     */
     public static boolean stop = false;
 
     @Override

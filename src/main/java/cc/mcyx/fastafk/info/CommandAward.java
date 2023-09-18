@@ -15,6 +15,11 @@ public class CommandAward {
         this.type = type;
     }
 
+    /**
+     * 执行此命令奖励
+     *
+     * @param player 操作玩家
+     */
     public void run(Player player) {
         String replaceCommand = AfkInfo.replaceAPIMessage(cmd, player);
         System.out.println(replaceCommand);
@@ -44,10 +49,20 @@ public class CommandAward {
     }
 
 
+    /**
+     * 获取命令
+     *
+     * @return 命令
+     */
     public String getCmd() {
         return cmd;
     }
 
+    /**
+     * 获取发送类型
+     *
+     * @return 类型
+     */
     public Type getType() {
         return type;
     }
