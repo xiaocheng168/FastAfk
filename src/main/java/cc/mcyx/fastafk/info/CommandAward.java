@@ -22,7 +22,6 @@ public class CommandAward {
      */
     public void run(Player player) {
         String replaceCommand = AfkInfo.replaceAPIMessage(cmd, player);
-        System.out.println(replaceCommand);
         switch (type) {
             case OP: {
                 //玩家是否为OP
